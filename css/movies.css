@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;300;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 100px;
+    background: rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 1000px){
+    section{
+        padding: 100px 50px;
+    }    
+}
+@media (max-width: 600px){
+    section{
+        padding: 125px 30px;
+    }    
+}
+header{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 35px 100px 0;
+}
+header a{
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 1.3em;
+    color: #fff;
+    transition: .7s;
+    text-decoration: none;
+}
+header a:hover{
+    background: #313EFF;
+    border-radius: 10px;
+    padding: 15px;
+    transition: .7s;
+}
+header h2{
+    text-transform: uppercase;
+    
+}
+header .nav{
+    display: flex;
+}
+header .nav li{
+    margin: 0 15px;
+}
+header .nav li:first-child{
+    margin-left: 0;
+}
+header .nav li:last-child{
+    margin-right: 0;
+}
+.til-eslo{
+    cursor: pointer;
+    font-size: 3rem;
+}
+@media (max-width:1000px){
+    header{
+        padding: 20px 50px;
+    }
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    header h2{
+        margin-bottom: 15px;
+    }
+    header .nav li{
+        margin: 0 7px;
+    }
+}
+.box{
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+.box .video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+}
+.box h1{
+    margin-bottom: 15px;
+    font-size: 6.5em;
+    text-transform: uppercase;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+.box a.box-btn{
+    padding: 15px 35px;
+    background: transparent;
+    border-radius: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    background: #313EFF;
+    transition: all .5s;
+    text-decoration: none;
+}
+.box a.box-btn:hover{
+    background: #000;
+}
+
+/* peliculas */
+.card-cont h4{
+    text-align: center;
+    font-size: 4.4rem;
+    color: #fff;
+}
+.contenedor-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding:10px;
+    box-shadow: 0 0 20px 0 #180fb9fb;
+    background: #00000057;
+    background-size: cover;
+    
+}
+.contenedor-card figure{
+    position: relative;
+    height: 300px;
+    width: 230px;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-top: 20px;
+}
+.contenedor-card figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.contenedor-card figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.651);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.contenedor-card figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+.contenedor-card figure:hover > .capa h3{
+    margin-top: 90px;
+    margin-bottom: 15px;
+}
+.contenedor-card figure .capa h3{
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 110px;
+    transition: all 500ms ease-out;
+    margin: 30px;
+}
+.contenedor-card figure .capa button{
+    height: 50px;
+    width: 120px;
+    background: #000;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: .6s;
+}
+.contenedor-card figure .capa button:hover{
+    background: #313EFF;
+    border: 1px solid #313EFF;
+    transition: .6s;
+}
+.contenedor-card figure .capa a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.card-cont{
+    background: #0e1249;
+}
+.paginacion-1{
+    margin: 20px 0;
+    padding-top: 30px;
+}
+.paginacion-1 ul{
+    list-style: none;
+    text-align: center;
+}
+.paginacion-1 ul li{
+    display: inline-block;
+    margin-right: 10px;
+
+}
+.paginacion-1 ul li a{
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background: #313EFF;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.paginacion-1 ul li a:hover{
+    background-color: #000;
+    font-size: 1.7rem;
+    transition: .7s;
+   
+}
+/* Pie de pagina  */
+.pie-pagina{
+    width: 100%;
+    background: #000;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box-foot figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box-foot h2{
+    color: #fff;
+    margin-bottom: 25px;font-size: 50px;
+}
+.pie-pagina .grupo-1 .box-foot p{
+    color: #efefef;
+    margin-bottom: 10px;
+    text-align: justify;
+
+}
+
+.pie-pagina .grupo-1 .box-foot a{
+    color: #efefef;
+    margin-bottom: 10px;
+    font-size: 19px;
+    text-align: justify;
+    text-decoration: underline;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    color: #fff;
+    margin-right: 10px;
+    text-align: center;
+    transition: .8s;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    background: #313EFF;
+    border-radius: 30px;
+    transition: .8s;
+}
+.pie-pagina .grupo-2{
+    background: #15151a96;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+

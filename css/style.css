@@ -1,0 +1,348 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;300;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 100px;
+    background: rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 1000px){
+    section{
+        padding: 100px 50px;
+    }    
+}
+@media (max-width: 600px){
+    section{
+        padding: 125px 30px;
+    }    
+}
+header{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 25px 100px 0;
+}
+header a{
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 1.3em;
+    color: #fff;
+    transition: .7s;
+    text-decoration: none;
+}
+header a:hover{
+    background: #313EFF;
+    border-radius: 10px;
+    padding: 15px;
+    transition: .7s;
+}
+header h2{
+    text-transform: uppercase;
+    
+}
+header .nav{
+    display: flex;
+}
+header .nav li{
+    margin: 0 15px;
+}
+header .nav li:first-child{
+    margin-left: 0;
+}
+header .nav li:last-child{
+    margin-right: 0;
+}
+.til-eslo{
+    cursor: pointer;
+    font-size: 3rem;
+}
+@media (max-width:1000px){
+    header{
+        padding: 20px 50px;
+    }
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    header h2{
+        margin-bottom: 15px;
+    }
+    header .nav li{
+        margin: 0 7px;
+    }
+}
+.box{
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+.box video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+}
+.box h1{
+    margin-bottom: 15px;
+    font-size: 6.5em;
+    text-transform: uppercase;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+.box a.box-btn{
+    padding: 15px 35px;
+    background: transparent;
+    border-radius: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    background: #313EFF;
+    transition: all .5s;
+    text-decoration: none;
+}
+.box a.box-btn:hover{
+    background: #000;
+}
+
+/* Generos */
+
+.card-cont{
+    background: #0e1249;
+}
+.title h2{
+    color: #fff;
+    font-size: 4.3rem;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.title-gen h2{
+    color: #0000008a;
+    font-size: 5.8rem;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.contenedor-card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+.contenedor-card figure{
+    position: relative;
+    height: 400px;
+    width: 1090px;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contenedor-card figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.contenedor-card figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.651);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.contenedor-card figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+.contenedor-card figure:hover > .capa h3{
+    margin-top: 120px;
+    margin-bottom: 15px;
+}
+.contenedor-card figure .capa h3{
+    color: #fff;
+    font-size: 90px;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin: 30px;
+}
+.contenedor-card figure .capa button{
+    height: 50px;
+    width: 120px;
+    background: #000;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: .6s;
+}
+.contenedor-card figure .capa button:hover{
+    background: #313EFF;
+    border: 1px solid #313EFF;
+    transition: .6s;
+}
+.contenedor-card figure .capa a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+/* footer */
+.pie-pagina{
+    width: 100%;
+    background: #000;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box-foot figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box-foot h2{
+    color: #fff;
+    margin-bottom: 25px;font-size: 50px;
+}
+.pie-pagina .grupo-1 .box-foot p{
+    color: #efefef;
+    margin-bottom: 10px;
+    text-align: justify;
+
+}
+
+.pie-pagina .grupo-1 .box-foot a{
+    color: #efefef;
+    margin-bottom: 10px;
+    font-size: 19px;
+    text-align: justify;
+    text-decoration: underline;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    color: #fff;
+    margin-right: 10px;
+    text-align: center;
+    transition: .8s;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    background: #313EFF;
+    border-radius: 30px;
+    transition: .8s;
+}
+.pie-pagina .grupo-2{
+    background: #15151a96;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+/* Formulario de contacto */
+.contacto{
+    background: rgba(0, 0, 0, 0.829);
+}
+.content{
+    max-width: 1170px;
+    text-align: center;
+    padding: 1.5em;
+}
+.logo{
+    color: #fff;
+    text-align: center;
+    font-size: 5em;
+}
+.logo span{
+    color: #313EFF;
+}
+.contact-wrapper{
+    box-shadow: 0 0 20px 0 #bab9cffb;
+    background: #0e1249;
+    border-radius: 40px;
+}
+.contact-wrapper > *{
+    padding: 1em;
+} 
+.contact-form form{
+    margin: 0;
+    padding: 1em;
+    
+} 
+.contact-form h3{
+    background: #11198d;
+    border-radius: 40px;
+    padding: 20px;
+    color: #fff;
+    font-size: 2em;
+}
+.contact-form label,
+.contact-form input,
+.contact-form textarea{
+    color: #fff;
+    font-size: 1.4em;
+} 
+.contact-form form input,
+.contact-form form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    border-bottom: 1px solid #313EFF;
+}
+.contact-form form button{
+    height: 50px;
+    width: 120px;
+    background: #313EFF;
+    border-radius: 10px;
+    border: 1px solid #313EFF;
+    color: #fff;
+    font-size: 1.4em;
+    transition: .6s;
+}
+.contact-form form button:hover{
+    transition: .6s;
+    height: 70px;
+    width: 130px;
+    font-size: 2em;
+
+}
